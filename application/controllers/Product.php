@@ -6,10 +6,14 @@ class Product extends CI_Controller {
     }
 
     public function index() {
-        $this->load->view('admin/product_list');
+        $this->load->view('admin/product/product_list');
+    }
+
+    public function p_add() {
+        $this->load->view('admin/product/form_add_product');
     }
 
     public function p_category() {
-        $this->load->view('admin/product_category');
+        $this->load->view('admin/product/product_category');
     }
 }
